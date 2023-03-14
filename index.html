@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div>
+      <label for="$urlInput">URL:</label>
+      <input type="text" id="$urlInput" />
+      <label for="$urlInput">Nome do arquivo:</label>
+      <input type="text" id="$filename" />
+    </div>
+    <button id="$start">Start</button>
+    <button id="$cancel">Cancel</button>
+    <div id="$result"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web-streams-polyfill@2.0.2/dist/ponyfill.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/streamsaver@2.0.3/StreamSaver.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <script type="module" src="scripts/index.js"></script>
+  </body>
+</html>
